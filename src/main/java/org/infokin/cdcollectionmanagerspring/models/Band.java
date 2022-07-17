@@ -1,6 +1,6 @@
-package org.infokin.cdcollectionmanagerspring.model;
+package org.infokin.cdcollectionmanagerspring.models;
 
-import org.infokin.cdcollectionmanagerspring.model.core.BaseEntity;
+import org.infokin.cdcollectionmanagerspring.models.core.BaseEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;

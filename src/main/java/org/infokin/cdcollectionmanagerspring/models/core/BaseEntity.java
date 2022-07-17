@@ -1,4 +1,4 @@
-package org.infokin.cdcollectionmanagerspring.model.core;
+package org.infokin.cdcollectionmanagerspring.models.core;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
