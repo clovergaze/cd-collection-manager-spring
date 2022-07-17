@@ -1,10 +1,19 @@
 package org.infokin.cdcollectionmanagerspring.model;
 
+import org.infokin.cdcollectionmanagerspring.model.core.BaseEntity;
+
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.Set;
 
-public class Band {
+@Entity
+@Table(name = "Bands")
+public class Band extends BaseEntity {
 
   private String name;
+
+  @OneToMany(mappedBy = "band")
   private Set<Album> albums;
 
   public Band() {

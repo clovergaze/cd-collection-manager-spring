@@ -1,8 +1,18 @@
 package org.infokin.cdcollectionmanagerspring.model;
 
-public class Album {
+import org.infokin.cdcollectionmanagerspring.model.core.BaseEntity;
+
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Albums")
+public class Album extends BaseEntity {
 
   private String name;
+
+  @ManyToOne
   private Band band;
 
   public Album() {
